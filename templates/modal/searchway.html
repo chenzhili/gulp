@@ -1,0 +1,52 @@
+<ion-modal-view hide-nav-bar="true">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <i class="icon ion-chevron-left" style="padding:0 10px;" ng-click="closeSearchModal()"></i>
+        </div>
+        <h1 class="title">搜索公式</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="confirm()" >提交</button>
+        </div>
+    </ion-header-bar>
+   <ion-content style="background-color: #f1f1f1;">
+       <ul class="list searchway-ul1">
+           <!-- code -->
+            <li class="item">
+              定码个数:
+              <input type="text" name="number" ng-model="searchitem.num"  onkeyup="this.value=this.value.replace(/[^1-9]/g,'') " onafterpaste="this.value=this.value.replace(/[^1-9]/g,'') " maxlength="1">
+            </li>
+            <!-- num -->
+            <li class="item">
+              计划周期:
+              <input type="text" name="number" ng-model="searchitem.code"  onkeyup="this.value=this.value.replace(/[^1-9]/g,'') " onafterpaste="this.value=this.value.replace(/[^1-9]/g,'') " maxlength="1">
+            </li>
+        </ul>
+        <div class="list">
+          <div class="item item-divider">
+            成绩
+          </div>
+            <input type="text" id="searchRange1" name="" value="" />
+          <div class="item item-divider">
+            最大连对
+          </div>
+            <input type="text" id="searchRange2" name="" value="" />
+          <div class="item item-divider">
+            最大连错
+          </div>
+            <input type="text" id="searchRange3" name="" value="" />
+          <div class="item item-divider">
+            当前连对/错
+          </div>
+            <input type="text" id="searchRange4" name="" value="" />
+          </div>
+        </div>
+        <!-- <div class="filesearch">
+            <i class="icon ion-navicon-round bar-calm" style="margin-right:10px;"></i><span class="bar-calm">数据筛选</span>
+        </div>
+        <div class="filesearch-block">
+            <ul>
+                <li ng-repeat="i in clickblocks track by $index" ng-click="i.type == true ?  i.type = false: i.type = true"  ng-class="{true:'search-chose1',false:'search-chose2'}[i.type]">{{i.name}}</li>
+            </ul>
+        </div> -->
+  </ion-content>
+</ion-modal-view>

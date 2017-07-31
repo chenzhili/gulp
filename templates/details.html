@@ -1,0 +1,15 @@
+<ion-view view-title="详情" hide-nav-bar="true">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <!-- <div class="buttons">
+            <i class="icon ion-chevron-left fcblack" style="padding:0 10px;" ui-sref="tab.news"></i>
+        </div> -->
+        <div class="buttons back-up" style="width: auto">
+            <yike-back></yike-back>
+        </div>
+        <h1 class="title">详情</h1>
+    </ion-header-bar>
+    <ion-content id="newsdetails" style="padding:0 8px;">
+          <p  style="text-align:center;font-size:1.2em;margin-top:15px;">{{detailsname}}</p>
+          <p ng-bind-html="text"></p>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,248 @@
+<!--<ion-view id="home">
+
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div style="text-align:center;width:100%;">
+            <span class="main-btn" style="padding:0 10px;margin:0 auto;">北京赛车追号计划</span>
+        </div>
+    </ion-header-bar>
+   <ion-content>
+        <div class="last-res">
+            <p>第{{pk.num}}期开奖</p>
+            <ul>
+                <li ng-repeat="con in pk.content track by $index" >{{con}}</li>
+            </ul>
+            <p>第{{thispk}}期开奖倒计时
+                <span  ng-show="playStatus.pkStatus == 0">正在开奖...</span>
+                <span  ng-show="playStatus.pkStatus == 1">{{pktime}}</span>
+                <span  ng-show="playStatus.pkStatus == 2">00:00:00</span></p>
+        </div>
+        <div class="about-plans">
+            <img src="img/home/line.png" style="width:100%;vertical-align:top;">
+            <div>
+                <div class="" ng-if="is_open == 1">
+                    <img src="img/home/fenxiang.png" style="display:inline-block;margin-bottom:2px;" nav-direction="forward" ng-click="goBuyRights1();">
+                    &lt;!&ndash; <p>计划分享</p> &ndash;&gt;
+                    <p>购买授权</p>
+                </div>
+                &lt;!&ndash; <div class="">
+                    <img src="img/home/qiehuan.png" style="display:inline-block;margin:3px 0;" nav-direction="forward" ui-sref="switching-formula">
+                    <p>切换公式</p>
+                </div> &ndash;&gt;
+                <div class="" ng-click="openMethodModal();">
+                    <img src="img/home/genggai.png" alt="">
+                    <p>更改计划</p>
+                </div>
+            </div>
+        </div>
+        <div class="his-list" ng-if="user.status == 0">
+            &lt;!&ndash; <div class="his-list"> &ndash;&gt;
+            <ul>
+                <li ui-sref="fade-program({id:1})">
+                    <div>
+                        <p style="display:inline-block;line-height:30px;margin:0;">481-483期</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;margin-top:5px;">
+                            <div class="sample_goal" id="fakerange">
+                                <div class="progressBar" style="width:100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">冠军定位&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">01 02 03 04 05</span>
+                    </div>
+                </li>
+                <li ui-sref="fade-program({id:2})">
+                    <div>
+                        <p style="display:inline-block;line-height:30px;margin:0;">482-484期</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;margin-top:5px;">
+                            <div class="sample_goal" id="fakerange">
+                                <div class="progressBar" style="width:100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">亚军定位&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">01 02 04 09 10</span>
+                    </div>
+                </li>
+                <li ui-sref="fade-program({id:3})">
+                    <div>
+                        <p style="display:inline-block;line-height:30px;margin:0;">483-485期</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;margin-top:5px;">
+                            <div class="sample_goal" id="fakerange">
+                                <div class="progressBar" style="width:100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">季军定位&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">02 03 04 06 07</span>
+                    </div>
+                </li>
+                <li ui-sref="fade-program({id:4})">
+                    <div>
+                        <p style="display:inline-block;line-height:30px;margin:0;">483-485期</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;margin-top:5px;">
+                            <div class="sample_goal" id="fakerange">
+                                <div class="progressBar" style="width:100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">冠军单双&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">双</span>
+                    </div>
+                </li>
+                <li ui-sref="fade-program({id:5})">
+                    <div>
+                        <p style="display:inline-block;line-height:30px;margin:0;">482-484期</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;margin-top:5px;">
+                            <div class="sample_goal" id="fakerange">
+                                <div class="progressBar" style="width:100%;">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">冠军质合&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">质</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="his-list">
+            <ul>
+                <li ng-repeat="i in collectDetail track by $index" ui-sref="program-details({id:i.v5,type:i.v6})">
+                    <div class="">
+                        <p style="display:inline-block;line-height:30px;margin:0;">{{i.v1}}</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;">
+                            <div class="sample_goal" id="{{i[3]}}"></div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">{{i.v2}}&nbsp;&nbsp;</p>
+                        <p class="ding">定</p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">{{i.v3}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+  </ion-content>
+</ion-view>-->
+<ion-view id="home" hide-nav-bar="true">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <p class="title">北京PK拾</p>
+        <div class="buttons" side="right">
+            <span><i ng-click="openQQ()" style="line-height:34px;">客服</i></span>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="swiper-container-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="banner in banners"><img ng-src="{{banner.image}}"></div>
+            </div>
+            <div class="swiper-pagination" style="top:120px;height:20px;"></div>
+        </div>
+        <div class="home_content">
+            <div class="home_lottery">
+                <div class="lottery_prev_now">第{{pk.num}}期开奖</div>
+                <ul class="clearfix">
+                    <li class="lottery_num fl"  ng-repeat="con in pk.content track by $index">{{con}}</li>
+                </ul>
+                <div class="lottery_prev_now">
+                    第{{thispk}}期开奖倒计时 &nbsp;
+                    <span  ng-show="playStatus.pkStatus == 0">正在开奖...</span>
+                    <span  ng-show="playStatus.pkStatus == 1">{{pktime}}</span>
+                    <span  ng-show="playStatus.pkStatus == 2">00:00:00</span>
+                </div>
+            </div>
+            <div class="href_link clearfix">
+                <div class="fl link_item" ui-sref="news">宝典秘籍</div>
+                <div class="fl link_item" ng-click="goBuyRights1();">购买授权</div>
+                <div class="fl link_item" ng-click="openMethodModal();">更改计划</div>
+            </div>
+        </div>
+        <div class="his-list">
+            <ul>
+                <li class="collection1" ng-repeat="i in collectDetail1 track by $index" repeat-finish="repeatFinish()" ui-sref="program-details({id:i.v5,type:i.v6})">
+                    <div class="">
+                        <p style="display:inline-block;line-height:30px;margin:0;">{{i.v1}}</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;">
+                            <div class="sample_goal" id="{{i[3]}}"></div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">{{i.v2}}&nbsp;&nbsp;</p>
+                        <p class="ding_new"></p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">{{i.v3}}</span>
+                    </div>
+                </li>
+                <li class="collection2" ng-repeat="i in collectDetail2 track by $index" repeat-finish="repeatFinish()" ui-sref="program-details({id:i.v5,type:i.v6})">
+                    <div class="">
+                        <p style="display:inline-block;line-height:30px;margin:0;">{{i.v1}}</p>
+                        <div class="container" style="width:50%;display:inline-block;float:right;">
+                            <div class="sample_goal" id="{{i[3]}}"></div>
+                        </div>
+                    </div>
+                    <div class="his-list-details">
+                        <p style="font-size:14px;">{{i.v2}}&nbsp;&nbsp;</p>
+                        <p class="ding_new"></p>&nbsp;&nbsp;
+                        <span style="font-size:12px;">{{i.v3}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>
+<script id="youxiwanfa.html" type="text/ng-template">
+    <ion-modal-view class="position-left0 content-bg">
+        <ion-header-bar  align-title="center" class="bar-positive">
+            <div class="buttons">
+                <i class="icon ion-chevron-left" style="padding:0 10px;" ng-click="closeMethodModal();"></i>
+            </div>
+            <h1 class="title">更改计划</h1>
+        </ion-header-bar>
+        <ion-content style="background-color:#f1f1f1;">
+
+            <div style="padding-left:0;padding-right:0;margin-top:15px;">
+                <div class="plan-head">
+                    <img src="img/home/arrow.png" style="width:90px;">
+                    <div>已选计划</div>
+                </div>
+            </div>
+            <div class="plans-chosed">
+                <ul>
+                    <li ng-repeat="co in collect"  ng-click="deleteCollect(co.id,$index);">{{co.plan_name}}</li>
+                </ul>
+            </div>
+
+            <div style="padding-left:0;padding-right:0;margin-top:15px;">
+                <div class="plan-head">
+                    <img src="img/home/arrow.png" style="width:90px;">
+                    <div>所有计划</div>
+                </div>
+            </div>
+            <div class="plans-all" ng-repeat="i in allplans track by $index">
+                <p>{{i.name}}</p>
+                <ul>
+                    <li ng-repeat="item in i.row" ng-click=addcollect(item.id)>{{item.name}}</li>
+                </ul>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>

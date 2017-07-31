@@ -1,0 +1,36 @@
+<ion-view view-title="支付订单" hide-nav-bar="true" id="payways">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <yike-back></yike-back>
+        </div>
+        <h1 class="title">支付订单</h1>
+    </ion-header-bar>
+    <ion-content style="background-color:#f1f1f1;">
+        <div style="padding:10px;">
+            <span class="fcgrey">请选择支付方式</span>
+        </div>
+        <div class="pay-confirm-list">
+            <ion-list style="font-size:10px;">
+                <!--ng-click="setPayWay('alipay')"-->
+                <ion-checkbox  style="font-size:14px;"  ng-model="filter.zhifub" ng-checked="true">
+                    <img src="img/recommend/zhifub.png" style="width:40px;">
+                    <div style="display:inline-block;margin-left:10px;" >
+                        <p>支付宝支付</p>
+                        <p class="fcgrey" style="font-size:12px;">推荐有支付宝账号的用户使用</p>
+                    </div>
+                <!--</ion-radio>-->
+                 <!--<ion-radio style="font-size:14px;" ng-model="filter.wechat" ng-click="setPayWay('wx');">-->
+                    <!--<img src="img/recommend/wechat.png" style="width:40px;">-->
+                    <!--<div style="display:inline-block;margin-left:10px;" >-->
+                        <!--<p>微信支付</p>-->
+                        <!--<p class="fcgrey" style="font-size:12px;">推荐安装微信5.0及以上版本的用户使用</p>-->
+                    <!--</div>-->
+                </ion-checkbox>
+            </ion-list>
+        </div>
+
+    </ion-content>
+    <div ng-click="confirm('alipay');"  class="main-btn" style="background-color:#ffa45c;border-radius:0;position:absolute;bottom:70px;width:80%;margin-left:10%;">
+        确认支付¥{{money}}
+    </div>
+</ion-view>

@@ -1,0 +1,842 @@
+[
+  {
+    "file": "css/style.css",
+    "hash": "4227cd4e03b9b609b71ebfa4ae7f5d7a"
+  },
+  {
+    "file": "css/swiper.min.css",
+    "hash": "3a731d5a64a9cf9052fcdf4bd5af621e"
+  },
+  {
+    "file": "img/account/2.png",
+    "hash": "cbe79a6293e632c740f02d7c00c15620"
+  },
+  {
+    "file": "img/account/guanyu.png",
+    "hash": "1a71230dd5a641a2e92c16ae4d867548"
+  },
+  {
+    "file": "img/account/kefu.png",
+    "hash": "1d99fb0440277eedb69cfb1dc42ef133"
+  },
+  {
+    "file": "img/account/logo.png",
+    "hash": "24e75b5cbac21ceccf70abebe88c0fc9"
+  },
+  {
+    "file": "img/account/mima.png",
+    "hash": "454e41d1cee9e2dc01e7906e5641a38a"
+  },
+  {
+    "file": "img/account/wode.png",
+    "hash": "e899f0bbfa2b53d489a646213fb08c11"
+  },
+  {
+    "file": "img/account/xufei.png",
+    "hash": "1451d96d01847d3de1cc02ee140819a2"
+  },
+  {
+    "file": "img/account/yijian.png",
+    "hash": "f4da47b0f8a9f9ca833b565dae33a498"
+  },
+  {
+    "file": "img/home/arrow.png",
+    "hash": "032e2ea166b6e13caced333150586406"
+  },
+  {
+    "file": "img/home/barbg.gif",
+    "hash": "4567699f112ebad5c4ce4de0708e6e4e"
+  },
+  {
+    "file": "img/home/del.png",
+    "hash": "3b1a286bb9a1913980ac9cd84ddad9bb"
+  },
+  {
+    "file": "img/home/fenxiang.png",
+    "hash": "7004d3ecd04b2de489f363a7f77544c4"
+  },
+  {
+    "file": "img/home/genggai.png",
+    "hash": "fac63d84cbbc1bd840dcb18ebeb7feb7"
+  },
+  {
+    "file": "img/home/home_banner.png",
+    "hash": "83e640d3ba410a25fb9f297c5bd00da4"
+  },
+  {
+    "file": "img/home/icon1.png",
+    "hash": "ff1ce3e1a1e3a09be3f7060f36d8b86c"
+  },
+  {
+    "file": "img/home/icon2.png",
+    "hash": "0162e5158002ee5cf11a55914bfa673a"
+  },
+  {
+    "file": "img/home/jdtbg.png",
+    "hash": "4e74ecaa0d5f6183c0ef9a1b6c4bdbe4"
+  },
+  {
+    "file": "img/home/line.png",
+    "hash": "99d095aeb591094c69ea0bcfa82c88a8"
+  },
+  {
+    "file": "img/home/lottery_bg1.png",
+    "hash": "08ec2a7358d1588e057766ba76f46fab"
+  },
+  {
+    "file": "img/home/lottery_bg2.png",
+    "hash": "159fb444012c8b16277cde5f90b9d739"
+  },
+  {
+    "file": "img/home/num_bg.png",
+    "hash": "d82aba8770d35b7c42993f5093835249"
+  },
+  {
+    "file": "img/home/plan_bg1.png",
+    "hash": "5f8593bebbfe9c500353cc45ae39d3ad"
+  },
+  {
+    "file": "img/home/plan_bg2.png",
+    "hash": "cd4936199b119f1055311ef67898d13c"
+  },
+  {
+    "file": "img/home/qiehuan.png",
+    "hash": "0588a54043f4a505788d6fea038abafb"
+  },
+  {
+    "file": "img/home/redball.png",
+    "hash": "8d5a5a461c45b9fd029ba5635e772d7a"
+  },
+  {
+    "file": "img/home/user_img1.png",
+    "hash": "80274c1fbd783570b36af2ce0ff0e754"
+  },
+  {
+    "file": "img/home/user_img2.png",
+    "hash": "042369143e858c2c00f827737959b9df"
+  },
+  {
+    "file": "img/icon.png",
+    "hash": "355a14f7d0d68779b7648524cfd60279"
+  },
+  {
+    "file": "img/login/login-bg.png",
+    "hash": "d489984479cb8612d742daa1f6ab513c"
+  },
+  {
+    "file": "img/login/logo.png",
+    "hash": "24e75b5cbac21ceccf70abebe88c0fc9"
+  },
+  {
+    "file": "img/qq.jpg",
+    "hash": "7abb3ae214be454a8e78abf469d22fff"
+  },
+  {
+    "file": "img/recommend/bg1.png",
+    "hash": "5bcb469079e580a74832f4e76bba3d99"
+  },
+  {
+    "file": "img/recommend/bg2.png",
+    "hash": "45b9a4999bb1dd9e0784d1bdcb5ba624"
+  },
+  {
+    "file": "img/recommend/wechat.png",
+    "hash": "768622678f71b97890ace1678f8d5810"
+  },
+  {
+    "file": "img/recommend/zhifub.png",
+    "hash": "0336a377b1556886ad90f6b504db96b3"
+  },
+  {
+    "file": "img/tabs/account_active.png",
+    "hash": "1f6a057cb7d6bb4122a9c75f8e4255e6"
+  },
+  {
+    "file": "img/tabs/account.png",
+    "hash": "56e05ebcee6159937c91592b7c0de955"
+  },
+  {
+    "file": "img/tabs/bg.png",
+    "hash": "1039fbe1e9df79d7cd2de8c5876b6e30"
+  },
+  {
+    "file": "img/tabs/bg2.png",
+    "hash": "eab00e8c741d1fbd8ac662c69820ce7b"
+  },
+  {
+    "file": "img/tabs/header_bg.png",
+    "hash": "1fcb601af6f4ca00b9bb4507f67c8e8f"
+  },
+  {
+    "file": "img/tabs/lottery_active.png",
+    "hash": "6e37db7fb98761b3d4a1a8505147da49"
+  },
+  {
+    "file": "img/tabs/lottery.png",
+    "hash": "98af4faca026853afdff511158050143"
+  },
+  {
+    "file": "img/tabs/movements_active.png",
+    "hash": "3bfc43ae17293cd1d94056ea2a886cce"
+  },
+  {
+    "file": "img/tabs/movements.png",
+    "hash": "895e3d6d6ef952e807203e100b64affb"
+  },
+  {
+    "file": "img/tabs/news_active.png",
+    "hash": "f9b6c125add80c79c156fe73972ea1d0"
+  },
+  {
+    "file": "img/tabs/news.png",
+    "hash": "12e51231ec5f287b4dcdc0073cc38ca1"
+  },
+  {
+    "file": "img/tabs/tab_home_active.png",
+    "hash": "3dd1b03cf7843fc0de6437edc5731e20"
+  },
+  {
+    "file": "img/tabs/tab_home.png",
+    "hash": "6269f9a14d0e13de80efc939aead832f"
+  },
+  {
+    "file": "img/tabs/test.png",
+    "hash": "eca39fc0cbc3bfbe6d197000168f3c31"
+  },
+  {
+    "file": "img/weixin.jpg",
+    "hash": "9cdeb3e5c67cecc2e14c8d469a50693d"
+  },
+  {
+    "file": "index.html",
+    "hash": "01d8c16f0ccb66df8fa8b6b27403b10d"
+  },
+  {
+    "file": "js/app.js",
+    "hash": "51cca5b160c026b5967ef9daf1be4d43"
+  },
+  {
+    "file": "js/controllers.js",
+    "hash": "d786b0dd33db70432974fa716ab95254"
+  },
+  {
+    "file": "js/ios9.patch.js",
+    "hash": "b5be3a77a22e3866ac0a5afc0050a4c6"
+  },
+  {
+    "file": "js/platform/fade.program.controllers.js",
+    "hash": "ca42f14975a3b26c77eda01d7d690e1b"
+  },
+  {
+    "file": "js/platform/platform.module.js",
+    "hash": "a65fc1d841bfd627868fd20c529b186b"
+  },
+  {
+    "file": "js/platform/platform.program.details.controller.js",
+    "hash": "1714bf30f8185ee73230fee12e50b9fb"
+  },
+  {
+    "file": "js/platform/platform.scheme.controller.js",
+    "hash": "4975477bb94b82b4670f05070dfe4c5a"
+  },
+  {
+    "file": "js/services.js",
+    "hash": "9a560c1695c45233db59d842bf97882a"
+  },
+  {
+    "file": "js/tabs/account.js",
+    "hash": "f2f932b4d1539d810a5a3df3c70f6c54"
+  },
+  {
+    "file": "js/tabs/home.controller.js",
+    "hash": "9803eac703228e62ef28c21529024612"
+  },
+  {
+    "file": "js/tabs/lottery.controller.js",
+    "hash": "93f524924d2161b6160e20f012a15220"
+  },
+  {
+    "file": "js/tabs/movements.controller.js",
+    "hash": "25a5215b3e0bb31c873331b71cdedca9"
+  },
+  {
+    "file": "js/tabs/news.controller.js",
+    "hash": "e7ab02b0652a152688a6a29ec8a88a8d"
+  },
+  {
+    "file": "js/tabs/tab.module.js",
+    "hash": "6ae7bdf371e2dee43d79389ea22d8b9f"
+  },
+  {
+    "file": "js/tabs/tabs.controller.js",
+    "hash": "b9e004796baa6b7555869d24c31d6d0c"
+  },
+  {
+    "file": "js/user/more.controller.js",
+    "hash": "387f3b75d71c02a524ebd46e1de17a4b"
+  },
+  {
+    "file": "js/user/search.details.controller.js",
+    "hash": "8273b77ff3ed3f9dd8f05b1c82821728"
+  },
+  {
+    "file": "js/user/user.about.us.controller.js",
+    "hash": "21b2086f5a7d188e657438ccb19f6d69"
+  },
+  {
+    "file": "js/user/user.bind.phone.controller.js",
+    "hash": "2851500450d0972c3158d4c60ea5e29e"
+  },
+  {
+    "file": "js/user/user.details.controller.js",
+    "hash": "784f7334bb66fb24f4cd38c95bad7545"
+  },
+  {
+    "file": "js/user/user.feed.back.controller.js",
+    "hash": "440e30e9e7f066bed5ea8e635b1ec33a"
+  },
+  {
+    "file": "js/user/user.linked.phone.controller.js",
+    "hash": "24701374d343fcafe20b8ab319aa904d"
+  },
+  {
+    "file": "js/user/user.login.controller.js",
+    "hash": "1fd352a2ba46be5a7798889862eaf956"
+  },
+  {
+    "file": "js/user/user.modification.password.controller.js",
+    "hash": "65d677aec94a72553e4bdb885143b9dc"
+  },
+  {
+    "file": "js/user/user.module.js",
+    "hash": "cfa74e478b3e3d62b6bff2d0aaac8236"
+  },
+  {
+    "file": "js/user/user.my.rights.controller.js",
+    "hash": "29df8edf44af51c60af3d0417a9e6966"
+  },
+  {
+    "file": "js/user/user.pay.rights.controller.js",
+    "hash": "f3a0bb73988811f7b00e9e75944e87c7"
+  },
+  {
+    "file": "js/user/user.pay.ways.controller.js",
+    "hash": "d2372a902f0f0ada961dfd7093f7f398"
+  },
+  {
+    "file": "js/user/user.recharge.controller.js",
+    "hash": "3388d5bfb26afc8c13d2a500336db603"
+  },
+  {
+    "file": "js/user/user.register.controller.js",
+    "hash": "86d4f5a70f7876f978c12c7158e327d5"
+  },
+  {
+    "file": "js/user/user.reset.password.controller.js",
+    "hash": "be5feb42a9e02d280911831b28d8e6a3"
+  },
+  {
+    "file": "js/user/user.scheme.controller.js",
+    "hash": "66ba696eaa6f023d283e76025d134088"
+  },
+  {
+    "file": "js/user/user.verification.email.controller.js",
+    "hash": "94593b77a1a4963150d7dc058d5641d5"
+  },
+  {
+    "file": "js/yike.taishan.js",
+    "hash": "e111b589a140738bd9d7e3e978897d7f"
+  },
+  {
+    "file": "js/yike/ionic-toast.js",
+    "hash": "0c787e0d847dc115a734315b74132742"
+  },
+  {
+    "file": "js/yike/yike.back.js",
+    "hash": "d91645fa0dbff779c971d71d2d3eec4c"
+  },
+  {
+    "file": "js/yike/yike.js",
+    "hash": "e96d0625044f2a0ca61cc78a1cb8d2b2"
+  },
+  {
+    "file": "js/yike/yike.sub.menu.js",
+    "hash": "0a564b56f3cfb48fddbb60f943a58bdd"
+  },
+  {
+    "file": "js/yike/yike.utils.js",
+    "hash": "74c27ce36104b1dbbc589bcc63a6aec9"
+  },
+  {
+    "file": "lib/angular-local-storage/angular-local-storage.min.js",
+    "hash": "9ec08e16dd3f514349adb081955f00b5"
+  },
+  {
+    "file": "lib/goalProgress/goalProgress.css",
+    "hash": "d9abf7ce60cd24bb0efeddc936b1c98f"
+  },
+  {
+    "file": "lib/goalProgress/goalProgress.min.js",
+    "hash": "eef3ab1412710f7e6e0908fc36c076c1"
+  },
+  {
+    "file": "lib/ion-rangeSlider/ion.rangeSlider.css",
+    "hash": "f5069b36da2397d9f5a85411a2eb2bec"
+  },
+  {
+    "file": "lib/ion-rangeSlider/ion.rangeSlider.js",
+    "hash": "7905295635ac7490efe703c152708c1f"
+  },
+  {
+    "file": "lib/ion-rangeSlider/ion.rangeSlider.min.js",
+    "hash": "13658394719844557aad6216aa84c232"
+  },
+  {
+    "file": "lib/ion-rangeSlider/ion.rangeSlider.skinHTML5.css",
+    "hash": "9ffcdcde644db26ddb9f18516e0a548a"
+  },
+  {
+    "file": "lib/ion-rangeSlider/normalize.css",
+    "hash": "1b24f00fb1c3523114767dc4aba76d14"
+  },
+  {
+    "file": "lib/ionic/css/ionic.css",
+    "hash": "169725e0bb0f1b3a3780a38358815836"
+  },
+  {
+    "file": "lib/ionic/css/ionic.min.css",
+    "hash": "49f66e19303768d9ea65179deefe394b"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.eot",
+    "hash": "2c2ae068be3b089e0a5b59abb1831550"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.svg",
+    "hash": "c037dbbc0e6790f30e824a50010df5fb"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.ttf",
+    "hash": "24712f6c47821394fba7942fbb52c3b2"
+  },
+  {
+    "file": "lib/ionic/fonts/ionicons.woff",
+    "hash": "05acfdb568b3df49ad31355b19495d4a"
+  },
+  {
+    "file": "lib/ionic/js/angular-ui/angular-ui-router.js",
+    "hash": "749a18f80f375e3049975f190a7bfc4e"
+  },
+  {
+    "file": "lib/ionic/js/angular-ui/angular-ui-router.min.js",
+    "hash": "04c594b762aba521277ee747b28745d5"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-animate.js",
+    "hash": "9385b61d5fbebd5b25ab313def614381"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-animate.min.js",
+    "hash": "71a13fcafc6dd1842745494a3cf43962"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-resource.js",
+    "hash": "711753d2e17e6871f57474d0ebfbb152"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-resource.min.js",
+    "hash": "ebe5a10de15c3b9b25b49b5d84102973"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-sanitize.js",
+    "hash": "305a6f71693bdf21e21cd09f24b2c4d6"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular-sanitize.min.js",
+    "hash": "9f8ca450f716142c9a06790953fb2532"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular.js",
+    "hash": "28c75087388cf69bbaabd3a954d73138"
+  },
+  {
+    "file": "lib/ionic/js/angular/angular.min.js",
+    "hash": "9a495e66b349fd238c80c7446529be1f"
+  },
+  {
+    "file": "lib/ionic/js/ionic-angular.js",
+    "hash": "b7250cf58b3e0f81bef21ffddb424523"
+  },
+  {
+    "file": "lib/ionic/js/ionic-angular.min.js",
+    "hash": "b95298e98c5acbcaef4bf36ad85f5ef7"
+  },
+  {
+    "file": "lib/ionic/js/ionic.bundle.js",
+    "hash": "def013ca3b1ab5afdd86fe131ad2a1db"
+  },
+  {
+    "file": "lib/ionic/js/ionic.bundle.min.js",
+    "hash": "34f01b72689414a224badd9089566158"
+  },
+  {
+    "file": "lib/ionic/js/ionic.js",
+    "hash": "bd36363bef2c9880bdadc12ad2cfc42c"
+  },
+  {
+    "file": "lib/ionic/js/ionic.min.js",
+    "hash": "a8c2d723002b87647bc67c088c9600a5"
+  },
+  {
+    "file": "lib/ionic/js/ng-cordova.js",
+    "hash": "67646479e1c85597eb5d44f9dcb465e1"
+  },
+  {
+    "file": "lib/ionic/scss/_action-sheet.scss",
+    "hash": "641a6c4d93de9f8ef97a74b8fb05460e"
+  },
+  {
+    "file": "lib/ionic/scss/_animations.scss",
+    "hash": "002489f48d018dc8940f8654655e5bf1"
+  },
+  {
+    "file": "lib/ionic/scss/_backdrop.scss",
+    "hash": "dcd98e45b01eef39c9294c9cd1afe982"
+  },
+  {
+    "file": "lib/ionic/scss/_badge.scss",
+    "hash": "0e63788ec8330522f551d446a3ed126a"
+  },
+  {
+    "file": "lib/ionic/scss/_bar.scss",
+    "hash": "9882697e97de48cce62af2192529ea1b"
+  },
+  {
+    "file": "lib/ionic/scss/_button-bar.scss",
+    "hash": "32c4878b1b2a9fabd7bd8471b4e41ff5"
+  },
+  {
+    "file": "lib/ionic/scss/_button.scss",
+    "hash": "34b1f0b7f41f177cda3847bb2bb34ef1"
+  },
+  {
+    "file": "lib/ionic/scss/_checkbox.scss",
+    "hash": "a3a749cda32b6476f1cb0156f5bc7769"
+  },
+  {
+    "file": "lib/ionic/scss/_form.scss",
+    "hash": "d822a4d00e59dce718cd3d9490286c0f"
+  },
+  {
+    "file": "lib/ionic/scss/_grid.scss",
+    "hash": "698a511eaf9e9a663f6574e47d7d0b67"
+  },
+  {
+    "file": "lib/ionic/scss/_items.scss",
+    "hash": "3370739a7cc5846b33d88d76c5c8788c"
+  },
+  {
+    "file": "lib/ionic/scss/_list.scss",
+    "hash": "9cd09308294d95cad189632b3879289a"
+  },
+  {
+    "file": "lib/ionic/scss/_loading.scss",
+    "hash": "bd8b6377e3538026ca4e9cbbae2f36f5"
+  },
+  {
+    "file": "lib/ionic/scss/_menu.scss",
+    "hash": "8fc75ac00dc7a3ee7430f85443dd161a"
+  },
+  {
+    "file": "lib/ionic/scss/_mixins.scss",
+    "hash": "769122330a7226bbede7aa505756204a"
+  },
+  {
+    "file": "lib/ionic/scss/_modal.scss",
+    "hash": "1e31caa1ce8a55ae16251815019ede28"
+  },
+  {
+    "file": "lib/ionic/scss/_platform.scss",
+    "hash": "d4db57f6f7969eac07d6fb7bcd230230"
+  },
+  {
+    "file": "lib/ionic/scss/_popover.scss",
+    "hash": "7f0fbc3b20b0c1a369a5939d180745a3"
+  },
+  {
+    "file": "lib/ionic/scss/_popup.scss",
+    "hash": "7047f9e8e877f8f99a99efa0b7d014b8"
+  },
+  {
+    "file": "lib/ionic/scss/_progress.scss",
+    "hash": "4a575dd12a15c98b04fbaed60f73078f"
+  },
+  {
+    "file": "lib/ionic/scss/_radio.scss",
+    "hash": "315e22e8ae59730c2304f0af80f06fa5"
+  },
+  {
+    "file": "lib/ionic/scss/_range.scss",
+    "hash": "f04c360b9fa6aa665c46d36c0656666b"
+  },
+  {
+    "file": "lib/ionic/scss/_refresher.scss",
+    "hash": "a3059615cf1273e3f1424b25efae143b"
+  },
+  {
+    "file": "lib/ionic/scss/_reset.scss",
+    "hash": "a3b8bc37d3c5c5a405620e17d1e384af"
+  },
+  {
+    "file": "lib/ionic/scss/_scaffolding.scss",
+    "hash": "ca62253716985f9026f06f889f73aba5"
+  },
+  {
+    "file": "lib/ionic/scss/_select.scss",
+    "hash": "15897b3f421ea68dba8c2c10a8965d3a"
+  },
+  {
+    "file": "lib/ionic/scss/_slide-box.scss",
+    "hash": "2c14e7c6c282d6f93e6b3bf23ed75a32"
+  },
+  {
+    "file": "lib/ionic/scss/_slides.scss",
+    "hash": "a87fe48ceab601af409f2d0b40bb5651"
+  },
+  {
+    "file": "lib/ionic/scss/_spinner.scss",
+    "hash": "c3c66f453d5150cc8b35c73696caa73f"
+  },
+  {
+    "file": "lib/ionic/scss/_tabs.scss",
+    "hash": "0bd441bb1c6b21288a14324d279e15ae"
+  },
+  {
+    "file": "lib/ionic/scss/_toggle.scss",
+    "hash": "c9843ebac3ad29966c490625ba1dc0d1"
+  },
+  {
+    "file": "lib/ionic/scss/_transitions.scss",
+    "hash": "1c4987f4472d206d42df89073982d84a"
+  },
+  {
+    "file": "lib/ionic/scss/_type.scss",
+    "hash": "279295ad75ca9035a13ae24a42ccff7e"
+  },
+  {
+    "file": "lib/ionic/scss/_util.scss",
+    "hash": "4f9798a66f8a62637f14554f830f6f82"
+  },
+  {
+    "file": "lib/ionic/scss/_variables.scss",
+    "hash": "2361ce43df998c1eb49dcc87a1772635"
+  },
+  {
+    "file": "lib/ionic/scss/ionic.css",
+    "hash": "50a1f2867c564f12151b523b38c95829"
+  },
+  {
+    "file": "lib/ionic/scss/ionic.css.map",
+    "hash": "2be6ecae88ed648cdc5574c793286dd7"
+  },
+  {
+    "file": "lib/ionic/scss/ionic.scss",
+    "hash": "dd5e3ba25adcd78cdc4c265ded21654e"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-font.scss",
+    "hash": "233ff533fb31f37c977ef23099dae69a"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-icons.scss",
+    "hash": "4e43190a2522fbe07da8bd34957755e5"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/_ionicons-variables.scss",
+    "hash": "e470a67a4a1fa6077f26c2f3969449af"
+  },
+  {
+    "file": "lib/ionic/scss/ionicons/ionicons.scss",
+    "hash": "84318ada280ad2eefeb1d6c729937d53"
+  },
+  {
+    "file": "lib/ionic/version.json",
+    "hash": "f6023cc228b1aed6eb51c64d997a26d4"
+  },
+  {
+    "file": "lib/jquery/jquery-2.1.4.min.js",
+    "hash": "b0dc11d0a434aafe88908c7f33d71095"
+  },
+  {
+    "file": "lib/jquery/jquery.SuperSlide.2.1.1.js",
+    "hash": "cd674d9e02f20426d9acf1d11c85539b"
+  },
+  {
+    "file": "lib/leancloud-javascript-sdk/.bower.json",
+    "hash": "aae3bd7d6b5054ace2c840381eb6fa7d"
+  },
+  {
+    "file": "lib/leancloud-javascript-sdk/.npmignore",
+    "hash": "52b004f530fc57ff9ff223236d9750e8"
+  },
+  {
+    "file": "lib/leancloud-javascript-sdk/bower.json",
+    "hash": "505417ef5384cfe27694554d59a59274"
+  },
+  {
+    "file": "lib/leancloud-javascript-sdk/dist/av-dev.js",
+    "hash": "6ecaeb6926d8fa4de26098037b971c5b"
+  },
+  {
+    "file": "lib/leancloud-javascript-sdk/dist/av-mini.js",
+    "hash": "ac404a7241b616810a426532e334ee61"
+  },
+  {
+    "file": "lib/moment/moment.min.js",
+    "hash": "3a22f0762c13e6872a54c65fd03e8b02"
+  },
+  {
+    "file": "lib/swiper/angular-swiper.js",
+    "hash": "5a727de9a1cac6b47699421f93680e6c"
+  },
+  {
+    "file": "lib/swiper/swiper-3.2.7.min.css",
+    "hash": "59a45a593cbfa769411c20039fe6c5a6"
+  },
+  {
+    "file": "lib/swiper/swiper-3.2.7.min.js",
+    "hash": "e703d0fd0ceaa154e866c4c7a0d94306"
+  },
+  {
+    "file": "lib/yike/release.js",
+    "hash": "6de2b7d49bd068eba8d3d8722462681e"
+  },
+  {
+    "file": "templates/about-us.html",
+    "hash": "0c9fa0b39bbc950db8094db0fda377f5"
+  },
+  {
+    "file": "templates/bind-phone.html",
+    "hash": "bbcd5da588b19423524b21a4566b7e0b"
+  },
+  {
+    "file": "templates/details.html",
+    "hash": "5b1c20b60c0e3f787e0cd696e5d85c86"
+  },
+  {
+    "file": "templates/fade-program.html",
+    "hash": "2c9a383d4c0695509d9157e8c5c7ab5a"
+  },
+  {
+    "file": "templates/feed-back.html",
+    "hash": "cc233b4368825ba2c4b185cd6209d2c5"
+  },
+  {
+    "file": "templates/linked-phone.html",
+    "hash": "bd2637eeb333bb138bf12dfb5fa193ee"
+  },
+  {
+    "file": "templates/modal/pay-service.html",
+    "hash": "bf751e409c07d54d51b97c9cdea420ab"
+  },
+  {
+    "file": "templates/modal/paymodal.html",
+    "hash": "8c2c2fb922da586094b204e58231ce88"
+  },
+  {
+    "file": "templates/modal/searchway.html",
+    "hash": "1a9235242682c4be871cd18dfb26fed0"
+  },
+  {
+    "file": "templates/modal/service.html",
+    "hash": "1e0d86c6a60b2cf760337606ee625549"
+  },
+  {
+    "file": "templates/modification-password.html",
+    "hash": "3b0f640befbdd3bd556b5e4e63866d8b"
+  },
+  {
+    "file": "templates/more.html",
+    "hash": "3a8b0f773915e0e136f3dfce9b616975"
+  },
+  {
+    "file": "templates/my-rights.html",
+    "hash": "d8f1722e292acd20d1399f36b62b05c2"
+  },
+  {
+    "file": "templates/my-scheme.html",
+    "hash": "6f0884cd53b8d9c9e98b7ba210f2bd21"
+  },
+  {
+    "file": "templates/pay-rights.html",
+    "hash": "654410f955db59b996c6562b6d51d99a"
+  },
+  {
+    "file": "templates/pay-ways.html",
+    "hash": "08a01730f18a4728e30ff187c4ae05ee"
+  },
+  {
+    "file": "templates/Plan-share.html",
+    "hash": "1e5b17cf1f737df857ea039f4429b118"
+  },
+  {
+    "file": "templates/program-details.html",
+    "hash": "c380a8ad275082596b5a674fbc945af3"
+  },
+  {
+    "file": "templates/recommend-program.html",
+    "hash": "1ddffe77f802f0ee3d68f6f579917a8f"
+  },
+  {
+    "file": "templates/reset-password.html",
+    "hash": "76ba5ba187f61cde6297c0da3b7ccade"
+  },
+  {
+    "file": "templates/search-details.html",
+    "hash": "fa212d511615c7fd55080c06e3c2d828"
+  },
+  {
+    "file": "templates/switching-formula.html",
+    "hash": "73a489e73d3da3dca9ab3279c1d152b5"
+  },
+  {
+    "file": "templates/tab-account.html",
+    "hash": "1e709ed6a72664f150592fc7d39f76a9"
+  },
+  {
+    "file": "templates/tab-home.html",
+    "hash": "7a8130a3b85d0c4c8c2bc0d53e07b616"
+  },
+  {
+    "file": "templates/tab-lottery.html",
+    "hash": "56dc3b0970c26e4756ff8ef31fb8c84e"
+  },
+  {
+    "file": "templates/tab-movements.html",
+    "hash": "20d7085c69c8bda87ac17756301c7d12"
+  },
+  {
+    "file": "templates/tab-news.html",
+    "hash": "5fba44b0ee7515dec2d3185c90c86f8e"
+  },
+  {
+    "file": "templates/tabs.html",
+    "hash": "f06a34158612005175e5e1cc6c163e6c"
+  },
+  {
+    "file": "templates/user-login.html",
+    "hash": "d4e7be1ff179e93d793b097650ce9252"
+  },
+  {
+    "file": "templates/user-recharge.html",
+    "hash": "ce11638935ad34498309b79b5b441203"
+  },
+  {
+    "file": "templates/user-register.html",
+    "hash": "5fa457dfa727cfc6566e2efd3ec20c02"
+  },
+  {
+    "file": "templates/verification-email.html",
+    "hash": "ad1cbbe12f28e6e423a3e58306eec339"
+  }
+]

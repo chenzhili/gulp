@@ -1,0 +1,67 @@
+<ion-view view-title="方案详情" hide-nav-bar="true" id="details">
+    <ion-header-bar align-title="center" class="bar-positive" style="z-index: 99">
+        <div class="buttons">
+            <i class="icon ion-chevron-left" style="padding:0 10px;" ui-sref="tab.home"></i>
+        </div>
+        <h1 class="title">计划详情</h1>
+        <div class="buttons">
+            <button class="button button-clear" id="copyAgain">复制</button>
+            <!-- <button class="button button-clear fcblack" ng-click="openSearchModal()" >搜索</button> -->
+        </div>
+    </ion-header-bar>
+    <div class="bar bar-subheader details">
+        <!-- <p>{{schemeDetails.plan.name}}</p> -->
+
+        <div class="swiper-container" id="details-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in collectDetail track by $index" repeat-finish="repeatFinish($index)"  style=" text-align:center;line-height:34px;"  ng-class="item[4]== planid ? 'swiper-bgc' : ''"  ui-sref="program-details({id:item[4],type:2})">{{item[1]}}</div>
+          </div>
+        </div>
+    </div>
+    <ion-content class="has-header has-subheader" style="bottom: 65px">
+        <div class="last-res">
+            <p>第{{pk.num}}期开奖</p>
+            <ul style="margin:6px 0;">
+                <li ng-repeat="con in pk.content track by $index" >{{con}}</li>
+            </ul>
+            <p >{{latestqishu}}<span style="display:inline-block;margin:0 10px;color:red;">预</span> <span ng-repeat="i in latestgoal track by $index" style="color:red;margin:0 2px;">{{i}}</span></p>
+            <p >{{thispk}}期<i class="icon ion-android-alarm-clock" style="margin:0 5px;color:red;"></i>{{data.time}}</p>
+        </div>
+
+        <div class="middle-box">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>{{rightrate}}</span></li>
+                <li class="middleul1li">最大连对<span>{{rightmax || 0}}</span></li>
+                <li class="middleul1li">最大连错<span>{{wrongmax || 0}}</span></li>
+                <li class="middleul1li">当前连对/错<span>{{rightnow1}}</span></li>
+            </ul>
+        </div>
+        <div class="middle-box">
+            <ul class="middleul2">
+                <li ng-repeat="item in allrighttimes" ng-if="item.times !=0 ">第{{item.name}}期中<span>{{item.times}}</span>次</li>
+            </ul>
+        </div>
+        <!--PK10-->
+        <ul ng-show="schemeDetails.plan.notes_num != 0  && type == 2">
+            <li class="title" ng-show="schemeDetails.plan.is_show == 1">{{schemeDetails.plan.content}}</li>
+
+            <li class="title" ng-repeat="win in latestqushuall">
+                <p>{{win.qishu}}<span style="margin:0 5px;color:red;">预</span>{{win.content}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{win.num}}</p>{{win.periods + '期 '}}<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{win.lottery}}</span><span style="color:#32CB43;">{{win.is_win}}</span></p>
+            </li>
+            <li class="title">
+                <p>{{latestqishu}}<span style="margin:0 5px;color:red;">预</span>{{latestyu}}</p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class="next-time">
+        <div>{{'上期开奖  '+schemeDetails.win2.periods+'期  '+schemeDetails.win2.lottery+'  '+schemeDetails.win2.is_win}}
+
+            <span style="float: right">开奖倒计时:{{data.time}}</span>
+        </div>
+        <div>更新时间&nbsp;&nbsp;{{schemeDetails.win2.create_time}}</div>
+        <div>九彩追号计划&nbsp;&nbsp;内容仅供参考&nbsp;&nbsp;QQ客服&nbsp;&nbsp;3524944792</div>
+    </ion-footer-bar>
+</ion-view>

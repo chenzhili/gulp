@@ -1,0 +1,57 @@
+<ion-view view-title="首页" hide-nav-bar="true" id="home">
+
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <i class="icon ion-chevron-left" style="padding:0 10px;" ng-click="backpage();"></i>
+        </div>
+        <h1 class="title">购买授权</h1>
+    </ion-header-bar>
+
+   <ion-content style="background-color: #f1f1f1;">
+       <div style="padding:10px;">
+           <span class="fcgrey">请选择授权类型</span>
+       </div>
+      <div class="list">
+            <ion-radio ng-repeat="i in allways track by $index" ng-click="getList_id(i.id,i.price)">
+                <span style="float:left;margin-left:10px;color:#d63138;font-size:14px">{{i.name}}</span>
+                <span style="float:right;margin-left:10px;color:#d63138;font-size:12px;line-height: 22px;">特价¥{{i.price}}</span>
+                <span style="float:right;text-decoration:line-through;font-size:12px;line-height: 22px;" class="fcgrey">原价¥{{i.old_price}}</span>
+            </ion-radio>
+      </div>
+      <div class="fcgrey" style="width:94%;margin-left:3%;">
+          <div style="margin-top:15px;">
+              <i class="icon ion-ios-paper-outline" style="float:left;font-size:1.6em;line-height:20px;"></i>
+              <div style="width:83%;margin-left:15px;display:inline-block;">标准版本：可看秘籍宝典，追号计划，更改计划。</div>
+          </div>
+          <div style="margin-top:15px;">
+              <i class="icon ion-ios-paper-outline" style="float:left;font-size:1.6em;line-height:20px;"></i>
+              <div style="width:83%;margin-left:15px;display:inline-block;">专业版本：使用所有的秘籍宝典（每月更新赛车技巧玩法秘籍）、所有计划。</div>
+          </div>
+          <div style="margin-top:15px;">
+              <i class="icon ion-ios-paper-outline" style="float:left;font-size:1.6em;line-height:20px;"></i>
+              <div style="width:83%;margin-left:15px;display:inline-block;">需要购买，请联系<span ng-click="openQQ();" style="color:red;text-decoration:underline;">QQ客服</span> 。</div>
+          </div>
+      </div>
+
+      <form name='diyform' id="diyform" action='' method='post'>
+          <input type='hidden' name='p0_Cmd'	id='p0_Cmd' >
+          <input type='hidden' name='p1_MerId'	 id='p1_MerId'>
+          <input type='hidden' name='p2_Order'	 id='p2_Order'>
+          <input type='hidden' name='p3_Amt'	 id='p3_Amt'>
+          <input type='hidden' name='p4_Cur'	 id='p4_Cur'>
+          <input type='hidden' name='p5_Pid'	 id='p5_Pid'>
+          <input type='hidden' name='p6_Pcat'	 id='p6_Pcat'>
+          <input type='hidden' name='p7_Pdesc'	 id='p7_Pdesc'>
+          <input type='hidden' name='p8_Url'	 id='p8_Url'>
+          <input type='hidden' name='p9_SAF'	 id='p9_SAF'>
+          <input type='hidden' name='pa_MP'		 id='pa_MP'>
+          <input type='hidden' name='pd_FrpId'	 id='pd_FrpId'>
+          <input type='hidden' name='pr_NeedResponse'	 id='pr_NeedResponse' >
+          <input type='hidden' name='hmac'  	id='hmac'>
+      </form>
+  </ion-content>
+      <div ng-click="gonext()"class="main-btn" style="background-color:#00ABF3;border-radius:0;position:absolute;bottom:70px;width:80%;margin-left:10%;">
+      <!-- <div ng-click="openModal()"class="main-btn" style="background-color:#ffa45c;border-radius:0;position:absolute;bottom:70px;width:80%;margin-left:10%;"> -->
+      下一步
+      </div>
+</ion-view>

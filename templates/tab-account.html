@@ -1,0 +1,107 @@
+
+<!--<ion-view view-title="" hide-nav-bar="true" id="account">
+  <div class="head-portrait">
+    <div class="account-user-pic">
+        <p class="name">我</p>
+      <img class="loginimg" ng-src="{{images || 'img/account/logo.png'}}" ng-click="pickImage()"/>
+      <p class="name">{{user.phone || user.email}}</p>
+      &lt;!&ndash; <p class="name">账号到期剩余时间：<span id="datetime">{{datatime}}</span><span ui-sref="recharge" class="renew" ng-show="isOpen == 1">续费</span></p> &ndash;&gt;
+    </div>
+  </div>
+  <ion-content class="has-tabs">
+    <div style="height: 170px"></div>
+    <div class="program list">
+      <div class="part item" ui-sref="pay-rights" ng-if="isOpen == 1">
+        <img src="img/account/xufei.png" alt="">
+        <span>续费授权</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+      <div class="part item" ui-sref="my-rights">
+        <img src="img/account/wode.png" alt="">
+        <span>我的授权</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+      <div class="part item" ui-sref="modification-password">
+        <img src="img/account/mima.png" alt="">
+        <span>密码管理</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+      <div class="part item" ng-click="openQQ()">
+       &lt;!&ndash; <div class="part item" ng-click="openQQ()"> &ndash;&gt;
+        <img src="img/account/kefu.png" alt="">
+        <span>在线客服</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+      <div class="part item" ui-sref="feed-back">
+        <img src="img/account/yijian.png" alt="">
+        <span>意见反馈</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+      <div class="part item" ui-sref="about-us">
+        <img src="img/account/guanyu.png" alt="">
+        <span>关于我们</span>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+    </div>
+    <div ng-click="loginout();"  class="main-btn" style="width:80%;margin-left:10%;border-radius:0;margin-bottom:25px;">
+        退出登录
+    </div>
+
+  </ion-content>
+</ion-view>-->
+<ion-view hide-nav-bar="true" id="account">
+  <ion-content style="background-color:#F7F7F6;">
+    <div class="account_title">
+      <i class="ion-email-unread my-message" ui-sref="my-message"></i>
+      <p>个人中心</p>
+      <div style="position:relative;">
+        <img ng-src="{{images || 'img/account/logo.png'}}"  ngf-pattern="image/*" accept="image/*"
+             ngf-max-size="10MB" ngf-resize="{width: 200, height: 200}" ngf-select="upload($file)"/>
+        <!--<img  ng-src="{{images || 'img/account/logo.png'}}" style="position:absolute;width:100%;height:100%;top:0;">
+        <input type="file" accept="image/*;" id="userImg" style="position:absolute;width:100%;height:100%;top:0;opacity:0;z-index:100;">-->
+      </div>
+      <p>{{user.phone || user.email}}</p>
+    </div>
+    <div class="account_content clearfix">
+      <a class="fl account_item" ui-sref="pay-rights" ng-if="isOpen == 1">
+        <div class="account_img">
+          <img src="img/account/continue_right.png">
+          <p>续费授权</p>
+        </div>
+      </a>
+      <a class="fl account_item" ui-sref="my-rights">
+        <div class="account_img">
+          <img src="img/account/my_rights.png">
+          <p>我的授权</p>
+        </div>
+      </a>
+      <a class="fl account_item" ui-sref="modification-password">
+        <div class="account_img">
+          <img src="img/account/password_manage.png">
+          <p>密码管理</p>
+        </div>
+      </a>
+      <a class="fl account_item" ng-click="openQQ()">
+        <div class="account_img">
+          <img src="img/account/account_kf.png">
+          <p>在线客服</p>
+        </div>
+      </a>
+      <a class="fl account_item" ui-sref="feed-back">
+        <div class="account_img">
+          <img src="img/account/suggestion.png">
+          <p>意见反馈</p>
+        </div>
+      </a>
+      <a class="fl account_item" ui-sref="about-us">
+        <div class="account_img">
+          <img src="img/account/about_us.png">
+          <p>关于我们</p>
+        </div>
+      </a>
+    </div>
+    <div class="account_btn" ng-click="loginout()">
+      <button class="button">退出登录</button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,35 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+    <!-- 首页 Tab -->
+    <ion-tab title="计划追号" icon-off="tab-home" icon-on="tab-home-active" href="#/tab/home">
+      <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+
+
+
+    <!-- 秘笈 Tab -->
+    <!--<ion-tab title="宝典秘笈" icon-off="tab-news" icon-on="tab-news-active"   href="#/tab/news">
+      <ion-nav-view name="tab-news"></ion-nav-view>
+    </ion-tab>-->
+
+  <!-- 历史开奖 Tab -->
+  <ion-tab title="历史开奖" icon-off="tab-lottery" icon-on="tab-lottery-active" href="#/tab/lottery">
+    <ion-nav-view name="tab-lottery"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 开奖走势 Tab -->
+  <ion-tab title="数据分析" icon-off="tab-movements" icon-on="tab-movements-active"  href="#/tab/movements">
+    <ion-nav-view name="tab-movements"></ion-nav-view>
+  </ion-tab>
+
+  <!-- 我的 Tab -->
+  <ion-tab title="个人中心" icon-off="tab-account" icon-on="tab-account-active" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>

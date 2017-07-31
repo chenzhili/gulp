@@ -1,0 +1,199 @@
+<ion-view view-title="方案详情" hide-nav-bar="true" id="details">
+    <ion-header-bar align-title="center" class="bar-positive" style="z-index: 99">
+        <div class="buttons">
+            <yike-back></yike-back>
+        </div>
+        <h1 class="title">计划详情</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="copy()">复制</button>
+            <button class="button button-clear" ng-click="openSearchModal()" >搜索</button>
+        </div>
+    </ion-header-bar>
+    <div class="bar bar-subheader details" style="top:60px;height:50px;">
+        <div class="swiper-container" id="program-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"  style=" text-align:center;line-height:34px;" ng-click='fadenum = 1'; ng-class="fadenum == 1 ? 'swiper-bgc' : ''">冠军定位</div>
+            <div class="swiper-slide"  style=" text-align:center;line-height:34px;" ng-click='fadenum = 2'; ng-class="fadenum == 2 ? 'swiper-bgc' : ''">亚军定位</div>
+            <div class="swiper-slide"  style=" text-align:center;line-height:34px;" ng-click='fadenum = 3'; ng-class="fadenum == 3 ? 'swiper-bgc' : ''">季军定位</div>
+            <div class="swiper-slide"  style=" text-align:center;line-height:34px;" ng-click='fadenum = 4'; ng-class="fadenum == 4 ? 'swiper-bgc' : ''">冠军单双</div>
+            <div class="swiper-slide"  style=" text-align:center;line-height:34px;" ng-click='fadenum = 5'; ng-class="fadenum == 5 ? 'swiper-bgc' : ''">冠军质合</div>
+          </div>
+        </div>
+    </div>
+    <ion-content class="has-header has-subheader" style="top:110px;">
+        <div class="last-res">
+            <p>第{{pk.num}}期开奖</p>
+            <ul style="margin:6px 0;">
+                <li ng-repeat="con in pk.content track by $index" >{{con}}</li>
+            </ul>
+            <p >628-630期<span style="display:inline-block;margin:0 10px;color:red;">预</span>
+                <span ng-show="fadenum == 1" ng-repeat="i in yuplan01 track by $index" style="color:red;margin:0 2px;">{{i}}</span>
+                <span ng-show="fadenum == 2" ng-repeat="i in yuplan02 track by $index" style="color:red;margin:0 2px;">{{i}}</span>
+                <span ng-show="fadenum == 3" ng-repeat="i in yuplan03 track by $index" style="color:red;margin:0 2px;">{{i}}</span>
+                <span ng-show="fadenum == 4" ng-repeat="i in yuplan04 track by $index" style="color:red;margin:0 2px;">{{i}}</span>
+                <span ng-show="fadenum == 5" ng-repeat="i in yuplan05 track by $index" style="color:red;margin:0 2px;">{{i}}</span>
+            </p>
+            <p > {{thispk}}期<i class="icon ion-android-alarm-clock" style="margin:0 5px;color:red;"></i>{{data.time}}</p>
+        </div>
+
+        <div class="middle-box" ng-show="fadenum == 1">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>100%</span></li>
+                <li class="middleul1li">最大连对<span>10</span></li>
+                <li class="middleul1li">最大连错<span>0</span></li>
+                <li class="middleul1li">当前连对/错<span>10</span></li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 1">
+            <ul class="middleul2">
+                <li>第1期中<span>3</span>次</li>
+                <li>第2期中<span>4</span>次</li>
+                <li>第3期中<span>3</span>次</li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 2">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>100%</span></li>
+                <li class="middleul1li">最大连对<span>10</span></li>
+                <li class="middleul1li">最大连错<span>0</span></li>
+                <li class="middleul1li">当前连对/错<span>10</span></li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 2">
+            <ul class="middleul2">
+                <li>第1期中<span>3</span>次</li>
+                <li>第2期中<span>4</span>次</li>
+                <li>第3期中<span>3</span>次</li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum ==3">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>100%</span></li>
+                <li class="middleul1li">最大连对<span>10</span></li>
+                <li class="middleul1li">最大连错<span>0</span></li>
+                <li class="middleul1li">当前连对/错<span>10</span></li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum ==3">
+            <ul class="middleul2">
+                <li>第1期中<span>4</span>次</li>
+                <li>第2期中<span>6</span>次</li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum ==4">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>100%</span></li>
+                <li class="middleul1li">最大连对<span>10</span></li>
+                <li class="middleul1li">最大连错<span>0</span></li>
+                <li class="middleul1li">当前连对/错<span>10</span></li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 4">
+            <ul class="middleul2">
+                <li>第1期中<span>6</span>次</li>
+                <li>第2期中<span>2</span>次</li>
+                <li>第3期中<span>2</span>次</li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 5">
+            <ul class="middleul1">
+                <li class="middleul1li">准确率<span>100%</span></li>
+                <li class="middleul1li">最大连对<span>10</span></li>
+                <li class="middleul1li">最大连错<span>0</span></li>
+                <li class="middleul1li">当前连对/错<span>10</span></li>
+            </ul>
+        </div>
+        <div class="middle-box" ng-show="fadenum == 5">
+            <ul class="middleul2">
+                <li>第1期中<span>5</span>次</li>
+                <li>第2期中<span>1</span>次</li>
+                <li>第3期中<span>4</span>次</li>
+            </ul>
+        </div>
+        <!--PK10-->
+        <ul ng-show="fadenum == 1">
+            <li class="title" ng-repeat="i in fadeplan_01 track by $index">
+                <p>{{i.qishu}}期<span style="margin:0 5px;color:red;">预</span>{{i.yuce}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{i.num}}</p>{{i.numqishu}}期<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{i.allnum}}</span><span style="color:#32CB43;">{{i.ifgot}}</span></p>
+            </li>
+            <li class="title">
+                <p>628-630期<span style="margin:0 5px;color:red;">预</span>
+                <span style="margin:0 3px;">01</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">10</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">05</span></p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+        <ul ng-show="fadenum == 2">
+            <li class="title" ng-repeat="i in fadeplan_02 track by $index">
+                <p>{{i.qishu}}期<span style="margin:0 5px;color:red;">预</span>{{i.yuce}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{i.num}}</p>{{i.numqishu}}期<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{i.allnum}}</span><span style="color:#32CB43;">{{i.ifgot}}</span></p>
+            </li>
+            <li class="title">
+                <p>492-494<span style="margin:0 5px;color:red;">预</span>
+                <span style="margin:0 3px;">01</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">10</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">05</span></p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+        <ul ng-show="fadenum == 3">
+            <li class="title" ng-repeat="i in fadeplan_03 track by $index">
+                <p>{{i.qishu}}期<span style="margin:0 5px;color:red;">预</span>{{i.yuce}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{i.num}}</p>{{i.numqishu}}期<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{i.allnum}}</span><span style="color:#32CB43;">{{i.ifgot}}</span></p>
+            </li>
+            <li class="title">
+                <p>628-630期<span style="margin:0 5px;color:red;">预</span>
+                <span style="margin:0 3px;">01</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">10</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">05</span></p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+        <ul ng-show="fadenum == 4">
+            <li class="title" ng-repeat="i in fadeplan_04 track by $index">
+                <p>{{i.qishu}}期<span style="margin:0 5px;color:red;">预</span>{{i.yuce}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{i.num}}</p>{{i.numqishu}}期<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{i.allnum}}</span><span style="color:#32CB43;">{{i.ifgot}}</span></p>
+            </li>
+            <li class="title">
+                <p>628-630期<span style="margin:0 5px;color:red;">预</span>
+                <span style="margin:0 3px;">01</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">10</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">05</span></p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+        <ul ng-show="fadenum == 5">
+            <li class="title" ng-repeat="i in fadeplan_05 track by $index">
+                <p>{{i.qishu}}期<span style="margin:0 5px;color:red;">预</span>{{i.yuce}}</p>
+                <p style="text-indent:2em;"><p class="righttime">{{i.num}}</p>{{i.numqishu}}期<span style="margin:0 5px;color:#48a1ff;">开</span><span style="margin:0 5px;color:#48a1ff;">{{i.allnum}}</span><span style="color:#32CB43;">{{i.ifgot}}</span></p>
+            </li>
+            <li class="title">
+                <p>628-630期<span style="margin:0 5px;color:red;">预</span>
+                <span style="margin:0 3px;">01</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">10</span>
+                <span style="margin:0 3px;">04</span>
+                <span style="margin:0 3px;">05</span></p>
+                <p style="text-indent:2em;">{{schemeDetails.plan.periods}}期&nbsp;<span style="margin:0 5px;color:#48a1ff;">等待开奖...</span></p>
+            </li>
+        </ul>
+
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class="next-time">
+        <div>上期开奖{{pk.num}}期
+            <span style="margin:0 1px;" ng-repeat="con in pk.content track by $index" >{{con}}</span style="margin:0 1px;">对<span style="float: right">开奖倒计时:{{data.time}}</span>
+        </div>
+        <div>更新时间&nbsp;&nbsp;{{nowdate}}</div>
+        <div>九彩追号计划&nbsp;&nbsp;内容仅供参考&nbsp;&nbsp;QQ客服&nbsp;&nbsp;3524944792</div>
+    </ion-footer-bar>
+</ion-view>

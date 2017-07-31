@@ -1,0 +1,34 @@
+<ion-view view-title="秘笈" hide-nav-bar="true"  >
+    <ion-header-bar align-title="center" class="bar-positive">
+         <div class="buttons">
+             <i class="icon ion-chevron-left" style="padding:0 10px;" ui-sref="tab.home"></i>
+             </div>
+            <h1 class="title">终极玩家宝典秘籍</h1>
+    </ion-header-bar>
+    <ion-content scroll="false" id="news">
+       <div class="new-box">
+           <div class="new-box-center">
+              <span ng-class="status==1?'have-active':''" ng-click="selectSort(1)">标准版用户</span>
+              <span ng-class="status==2?'have-active':''" ng-click="selectSort(2)">专业版用户</span>
+           </div>
+       </div>
+        <div class="list-box" ng-repeat="new in data" ng-if="status == 1">
+            <div class="list" style="margin-bottom:0px;">
+                <div class="list-left">{{new.classify_name}}</div>
+                <div class="list-right" nav-direction="forward" ng-click="gomore(new.classify_id)">更多<i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></div>
+            </div>
+            <div class="row" nav-direction="forward" ng-repeat="news in new.row track by $index" ng-click="godetails(news.id)">
+                 <p>{{news.name}}</p>
+            </div>
+        </div>
+        <div class="list-box" ng-repeat="new in datas" ng-if="status == 2">
+            <div class="list"  style="margin-bottom:0px;">
+                <div class="list-left">{{new.classify_name}}</div>
+                <div class="list-right" nav-direction="forward" ng-click="gomore(new.classify_id)" >更多<i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></div>
+            </div>
+            <div class="row" nav-direction="forward" ng-repeat="news in new.row track by $index" ng-click="godetails(news.id)">
+                 <p>{{news.name}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
